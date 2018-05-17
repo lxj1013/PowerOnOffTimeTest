@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeSettingsActivity">
+
+    <TextView
+        android:id="@+id/time_settings_off_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_off_str"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:id="@+id/time_settings_on_tv"
+        android:layout_toRightOf="@id/time_settings_off_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_on_str"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:id="@+id/time_settings_off_hour_title_tv"
+        android:layout_below="@id/time_settings_off_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_hour_str"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <TextView
+        android:id="@+id/time_settings_off_minute_title_tv"
+        android:layout_below="@id/time_settings_off_tv"
+        android:layout_toRightOf="@id/time_settings_off_hour_title_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_minute_str"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <TextView
+        android:id="@+id/time_settings_on_hour_title_tv"
+        android:layout_below="@id/time_settings_off_tv"
+        android:layout_toRightOf="@id/time_settings_off_minute_title_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_hour_str"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <TextView
+        android:id="@+id/time_settings_on_minute_title_tv"
+        android:layout_below="@id/time_settings_off_tv"
+        android:layout_toRightOf="@id/time_settings_on_hour_title_tv"
+        android:gravity="center"
+        android:text="@string/time_settings_minute_str"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/time_settings_off_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_settings_off_hour_title_tv"
+        app:layout_heightPercent="35%"
+        app:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/time_settings_off_colon_tv"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/time_settings_colon_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="8%" />
+
+        <TextView
+            android:id="@+id/time_settings_off_hour_tv"
+            android:layout_toLeftOf="@id/time_settings_off_colon_tv"
+            android:gravity="center|right"
+            android:text="@string/time_settings_time_text_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="9%" />
+
+        <Button
+            android:id="@+id/time_settings_off_hour_plus_btn"
+            style="@style/ButtonStyle"
+            android:layout_toLeftOf="@id/time_settings_off_hour_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_plus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/time_settings_off_hour_minus_btn"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/time_settings_off_hour_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_minus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <TextView
+            android:id="@+id/time_settings_off_minute_tv"
+            android:layout_toRightOf="@id/time_settings_off_colon_tv"
+            android:gravity="center|left"
+            android:text="@string/time_settings_time_text_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="9%" />
+
+        <Button
+            android:id="@+id/time_settings_off_minute_plus_btn"
+            style="@style/ButtonStyle"
+            android:layout_toRightOf="@id/time_settings_off_minute_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_plus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/time_settings_off_minute_minus_btn"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/time_settings_off_minute_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_minus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/time_settings_on_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time_settings_on_hour_title_tv"
+        app:layout_heightPercent="35%"
+        app:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/time_settings_on_colon_tv"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/time_settings_colon_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="8%" />
+
+        <TextView
+            android:id="@+id/time_settings_on_hour_tv"
+            android:layout_toLeftOf="@id/time_settings_on_colon_tv"
+            android:gravity="center|right"
+            android:text="@string/time_settings_time_text_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="9%" />
+
+        <Button
+            android:id="@+id/time_settings_on_hour_plus_btn"
+            style="@style/ButtonStyle"
+            android:layout_toLeftOf="@id/time_settings_on_hour_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_plus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/time_settings_on_hour_minus_btn"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/time_settings_on_hour_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_minus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <TextView
+            android:id="@+id/time_settings_on_minute_tv"
+            android:layout_toRightOf="@id/time_settings_on_colon_tv"
+            android:gravity="center|left"
+            android:text="@string/time_settings_time_text_str"
+            android:textStyle="bold"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="9%" />
+
+        <Button
+            android:id="@+id/time_settings_on_minute_plus_btn"
+            style="@style/ButtonStyle"
+            android:layout_toRightOf="@id/time_settings_on_minute_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_plus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/time_settings_on_minute_minus_btn"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/time_settings_on_minute_tv"
+            android:gravity="center"
+            android:text="@string/time_settings_minus_str"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="25%" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <CheckBox
+        android:id="@+id/time_settings_week_wednesday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/time_settings_week_wednesday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_tuesday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toLeftOf="@id/time_settings_week_wednesday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_tuesday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_monday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toLeftOf="@id/time_settings_week_tuesday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_monday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_all_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toLeftOf="@id/time_settings_week_monday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_all_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="12%" />
+
+    <TextView
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toLeftOf="@id/time_settings_week_all_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="8%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_thursday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toRightOf="@id/time_settings_week_wednesday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_thursday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_friday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toRightOf="@id/time_settings_week_thursday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_friday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_saturday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toRightOf="@id/time_settings_week_friday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_saturday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <CheckBox
+        android:id="@+id/time_settings_week_sunday_chk"
+        android:layout_below="@id/time_settings_off_layout"
+        android:layout_toRightOf="@id/time_settings_week_saturday_chk"
+        android:gravity="center"
+        android:text="@string/time_settings_week_sunday_str"
+        app:layout_heightPercent="15%"
+        app:layout_widthPercent="10%" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_below="@id/time_settings_week_all_chk"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%">
+
+        <Space
+            android:id="@+id/time_settings_add_close_space"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="30%" />
+
+        <Button
+            android:id="@+id/time_settings_add_btn"
+            style="@style/ButtonStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/time_settings_add_close_space"
+            android:gravity="center"
+            android:text="@string/time_settings_week_add_str"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="15%" />
+
+        <Button
+            android:id="@+id/time_settings_close_btn"
+            style="@style/ButtonStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/time_settings_add_close_space"
+            android:gravity="center"
+            android:text="@string/time_settings_week_close_str"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="15%" />
+
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

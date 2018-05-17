@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="SettingsTheme" parent="@style/Theme.AppCompat.DialogWhenLarge">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 不透明 -->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!-- 无标题 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 背景 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:buttonStyle">@style/ButtonStyleTwo</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/my_btn_style</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="ButtonStyleTwo" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/my_btn_style2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+    <style name="TextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

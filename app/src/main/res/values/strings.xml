@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">MediaShow</string>
+    <string name="app_name_ch">多媒体信息发布</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_time_settings">TimeSettingsActivity</string>
+    <string name="settings_basic">基本设置</string>
+    <string name="settings_offline">单机设置</string>
+    <string name="clean_terminal">清理终端</string>
+    <string name="about">关于我们</string>
+    <string name="time_switch_settings_str">定时开关机</string>
+    <string name="other_item_settings_str">其他项设置</string>
+    <string name="time_switch_settings_add_str">添加</string>
+    <string name="time_switch_settings_open_str">开启</string>
+    <string name="time_switch_settings_close_str">关闭</string>
+    <string name="time_switch_settings_information_str">系统开关机信息</string>
+    <string name="time_switch_settings_off_str">关机时间</string>
+    <string name="time_switch_settings_on_str">开机时间</string>
+    <string name="time_settings_off_str">关机时间</string>
+    <string name="time_settings_on_str">开机时间</string>
+    <string name="time_settings_hour_str">时</string>
+    <string name="time_settings_minute_str">分</string>
+    <string name="time_settings_close_str">关闭</string>
+    <string name="time_settings_plus_str">+</string>
+    <string name="time_settings_minus_str">-</string>
+    <string name="time_settings_time_text_str">00</string>
+    <string name="time_settings_colon_str">:</string>
+    <string name="time_settings_week_str">周期:</string>
+    <string name="time_settings_week_all_str">全选</string>
+    <string name="time_settings_week_monday_str">一</string>
+    <string name="time_settings_week_tuesday_str">二</string>
+    <string name="time_settings_week_wednesday_str">三</string>
+    <string name="time_settings_week_thursday_str">四</string>
+    <string name="time_settings_week_friday_str">五</string>
+    <string name="time_settings_week_saturday_str">六</string>
+    <string name="time_settings_week_sunday_str">日</string>
+    <string name="time_settings_week_add_str">添加</string>
+    <string name="time_settings_week_close_str">关闭</string>
+    <string name="other_settings_volume_control_str">音量控制</string>
+    <string name="other_settings_volume_text_str">50%</string>
+    <string name="other_settings_power_boot_str">开机启动App</string>
+    <string name="other_settings_hdmi_str">主屏幕显示HDMI</string>
+    <string name="other_settings_check_state_str">检查运行状态并启动App</string>
+    <string name="other_settings_select_storage_path_str">选择节目存储位置：</string>
+    <string name="mould_settings_str">模板设置</string>
+    <string name="image_settings_str">图片设置</string>
+    <string name="subtitle_settings_str">字幕设置</string>
+    <string name="other_settings_str">其他设置</string>
+    <string name="mould_settings_landscape_mode_choose_str">横屏模式-选择模板</string>
+    <string name="mould_settings_portrait_mode_choose_str">竖屏模式-选择模板</string>
+    <string name="image_settings_animation_choose_str">动画选择:</string>
+    <string name="image_settings_animation_none_str">无</string>
+    <string name="image_settings_animation_random_str">随机</string>
+    <string name="image_settings_animation_zoom_str">缩放</string>
+    <string name="image_settings_animation_slide_str">滑动</string>
+    <string name="image_settings_animation_fade_out_str">淡出</string>
+    <string name="image_settings_animation_turn_str">旋转</string>
+    <string name="image_settings_animation_combination_str">组合</string>
+    <string name="image_settings_animation_time_str">动画时间:</string>
+    <string name="image_settings_animation_time_500ms_str">0.5s</string>
+    <string name="image_settings_animation_time_1000ms_str">1.0s</string>
+    <string name="image_settings_animation_time_1500ms_str">1.5s</string>
+    <string name="image_settings_animation_time_2000ms_str">2.0s</string>
+    <string name="image_settings_animation_time_2500ms_str">2.5s</string>
+    <string name="image_settings_animation_time_3000ms_str">3.0s</string>
+    <string name="image_settings_animation_interval_str">间隔时间:</string>
+    <string name="image_settings_animation_interval_5s_str">5s</string>
+    <string name="image_settings_animation_interval_10s_str">10s</string>
+    <string name="image_settings_animation_interval_30s_str">30s</string>
+    <string name="image_settings_animation_interval_60s_str">60s</string>
+    <string name="image_settings_animation_interval_120s_str">120s</string>
+    <string name="image_settings_animation_interval_300s_str">300s</string>
+    <string name="image_settings_animation_transition_color_str">过渡颜色:</string>
+    <string name="image_settings_animation_transition_black_str">黑色</string>
+    <string name="image_settings_animation_transition_white_str">白色</string>
+    <string name="image_settings_animation_transition_red_str">红色</string>
+    <string name="image_settings_animation_transition_orange_str">橙色</string>
+    <string name="image_settings_animation_transition_yellow_str">黄色</string>
+    <string name="image_settings_animation_transition_green_str">绿色</string>
+    <string name="image_settings_animation_transition_blue_str">蓝色</string>
+    <string name="image_settings_animation_transition_indigo_str">靛色</string>
+    <string name="image_settings_animation_transition_purple_str">紫色</string>
+    <string name="subtitle_settings_state_str">字幕状态:</string>
+    <string name="subtitle_settings_state_activate_str">字幕激活</string>
+    <string name="subtitle_settings_state_shut_str">字幕关闭</string>
+    <string name="subtitle_settings_location_str">字幕位置:</string>
+    <string name="subtitle_settings_location_top_str">屏幕顶部</string>
+    <string name="subtitle_settings_location_bottom_str">屏幕底部</string>
+    <string name="subtitle_settings_color_str">字幕颜色:</string>
+    <string name="subtitle_settings_color_black_str">黑色</string>
+    <string name="subtitle_settings_color_white_str">白色</string>
+    <string name="subtitle_settings_background_str">字幕背景:</string>
+    <string name="subtitle_settings_background_transparent_str">透明</string>
+    <string name="subtitle_settings_background_black_str">黑色</string>
+    <string name="subtitle_settings_background_white_str">白色</string>
+    <string name="subtitle_settings_font_str">字幕字体:</string>
+    <string name="subtitle_settings_font_small_str">小</string>
+    <string name="subtitle_settings_font_medium_str">中</string>
+    <string name="subtitle_settings_font_large_str">大</string>
+    <string name="subtitle_settings_font_extra_large_str">特大</string>
+    <string name="subtitle_settings_speed_str">字幕速度:</string>
+    <string name="subtitle_settings_speed_slow_str">慢</string>
+    <string name="subtitle_settings_speed_normal_str">中</string>
+    <string name="subtitle_settings_speed_fast_str">快</string>
+    <string name="subtitle_settings_preview_str">字幕预览</string>
+    <string name="other_settings_time_state_str">时间状态:</string>
+    <string name="other_settings_time_state_activate_str">激活时间</string>
+    <string name="other_settings_time_state_shut_str">关闭时间</string>
+    <string name="other_settings_date_state_str">日期状态:</string>
+    <string name="other_settings_date_state_activate_str">激活日期</string>
+    <string name="other_settings_date_state_shut_str">关闭日期</string>
+    <string name="other_settings_chinese_traditional_calendar_state_str">农历状态:</string>
+    <string name="other_settings_chinese_traditional_calendar_state_activate_str">激活农历</string>
+    <string name="other_settings_chinese_traditional_calendar_state_shut_str">关闭农历</string>
+    <string name="other_settings_view_location_str">控件位置:</string>
+    <string name="other_settings_view_location_left_top_str">左上</string>
+    <string name="other_settings_view_location_left_bottom_str">左下</string>
+    <string name="other_settings_view_location_right_top_str">右上</string>
+    <string name="other_settings_view_location_right_bottom_str">右下</string>
+    <string name="other_settings_view_color_str">控件颜色:</string>
+    <string name="other_settings_view_color_black_str">黑色</string>
+    <string name="other_settings_view_color_white_str">白色</string>
+    <string name="other_settings_music_state_str">背景音乐:</string>
+    <string name="other_settings_music_state_activate_str">激活音乐</string>
+    <string name="other_settings_music_state_shut_str">关闭音乐</string>
+    <string name="other_settings_usb_import_mode_str">usb导入方式:</string>
+    <string name="other_settings_usb_import_mode_one_str">替换同名旧节目，并追加新节目</string>
+    <string name="other_settings_usb_import_mode_two_str">删除所有旧节目，再追加新节目</string>
+    <string name="other_settings_usb_import_mode_three_str">保留同名旧节目，仅追加不同名新节目</string>
+    <string name="other_settings_preview_str">时间、日期、农历 效果预览</string>
+
+    <string name="EveryDay">&#160;每天</string>
+    <string name="Monday">&#160;周一</string>
+    <string name="Tuesday">&#160;周二</string>
+    <string name="Wednesday">&#160;周三</string>
+    <string name="Thursday">&#160;周四</string>
+    <string name="Friday">&#160;周五</string>
+    <string name="Saturday">&#160;周六</string>
+    <string name="Sunday">&#160;周日</string>
+    <string name="PowerOn">开机</string>
+    <string name="PowerOff">关机</string>
+
+    <string name="days_of_week_not_set">请设置周期！</string>
+
+    <string name="time_switch_settings_delete_str">删除</string>
+    <string name="time_switch_settings_delete_all_str">删除全部</string>
+    <string name="time_switch_settings_add_new_str">新增</string>
+    <string name="time_switch_settings_back_str">返回</string>
+
+    <string name="about_us">
+        深圳市海视达智显科技有限公司(简称Hisistar)
+        是一家基于海思智能显示系列芯片为依托，专注于智能硬件及软件研发并提供一体解决方案的研发型
+        公司，公司产品广泛应用于广告机、数字标牌、酒店智能网络电视及控制终端、自助设备显示控制终
+        端、智能物联显示与控制终端、工控显示与控制终端、教育会议显示控制终端、轨道交通智能显示终
+        端、机器人显示及控制以及行业显示与应用等诸多领域，为客户提供各类规格的高性价比安卓智能主
+        控驱动板、行业应用的系统硬件及软件解决方案、定制化智能硬件及APP开发、基于主控板的后台系
+        统软件开发等多元化一体式系统解决方案。\n\n
+        联系人：廖先生\n
+        QQ：308564262\n
+        电话：18665987554
+        邮箱：liaoyu@hisistar.com.cn\n
+        地址：广东省深圳市龙华区逸尚路默根创意产业园B座12楼1207室\n
+    </string>
+</resources>

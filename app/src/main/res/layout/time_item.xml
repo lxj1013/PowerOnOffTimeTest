@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ButtonStyleTwo"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="time"
+            app:layout_widthPercent="15%" />
+
+        <TextView
+            android:id="@+id/week_tv"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/time_tv"
+            android:layout_toRightOf="@id/time_tv"
+            android:gravity="start"
+            android:text="week"
+            app:layout_widthPercent="70%" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/week_tv"
+            android:layout_toRightOf="@id/week_tv"
+            android:gravity="start"
+            android:text="status"
+            app:layout_widthPercent="15%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+</LinearLayout>
