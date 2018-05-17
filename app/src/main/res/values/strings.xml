@@ -146,6 +146,9 @@
     <string name="time_switch_settings_add_new_str">新增</string>
     <string name="time_switch_settings_back_str">返回</string>
 
+    <string name="off_time_exist">设置关机失败，该时间段已经存在开关机事件！</string>
+    <string name="on_time_exist">设置开机失败，该时间段已经存在开关机事件！</string>
+
     <string name="about_us">
         深圳市海视达智显科技有限公司(简称Hisistar)
         是一家基于海思智能显示系列芯片为依托，专注于智能硬件及软件研发并提供一体解决方案的研发型

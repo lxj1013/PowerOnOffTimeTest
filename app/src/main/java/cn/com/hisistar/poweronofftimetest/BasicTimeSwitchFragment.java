@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -163,30 +164,37 @@ public class BasicTimeSwitchFragment extends Fragment implements View.OnClickLis
             MyTime offTime = (MyTime) data.getSerializableExtra("offTime");
             MyTime onTime = (MyTime) data.getSerializableExtra("onTime");
 
-            mContentValues.put("id", mTimeAdapter.getItemCount());
-            mContentValues.put("hour", offTime.getHour());
-            mContentValues.put("minute", offTime.getMinute());
-            mContentValues.put("attribute", offTime.getAttribute());
-            mContentValues.put("daysOfWeek", offTime.getDaysOfWeek());
-            mTimeDb.insert(TABLE_NAME, null, mContentValues);
-            mContentValues.clear();
-            mTimeAdapter.add(offTime, mTimeAdapter.getItemCount());
 
-            mContentValues.put("id", mTimeAdapter.getItemCount());
-            mContentValues.put("hour", onTime.getHour());
-            mContentValues.put("minute", onTime.getMinute());
-            mContentValues.put("attribute", onTime.getAttribute());
-            mContentValues.put("daysOfWeek", onTime.getDaysOfWeek());
-            mTimeDb.insert(TABLE_NAME, null, mContentValues);
-            mContentValues.clear();
-            mTimeAdapter.add(onTime, mTimeAdapter.getItemCount());
+            if (mTimeAdapter.add(offTime, mTimeAdapter.getItemCount())) {
+                mContentValues.put("id", mTimeAdapter.getItemCount());
+                mContentValues.put("hour", offTime.getHour());
+                mContentValues.put("minute", offTime.getMinute());
+                mContentValues.put("attribute", offTime.getAttribute());
+                mContentValues.put("daysOfWeek", offTime.getDaysOfWeek());
+                mTimeDb.insert(TABLE_NAME, null, mContentValues);
+                mContentValues.clear();
+            } else {
+                Toast.makeText(getActivity(), getResources().getString(R.string.off_time_exist), Toast.LENGTH_SHORT).show();
+            }
+
+            if (mTimeAdapter.add(onTime, mTimeAdapter.getItemCount())) {
+                mContentValues.put("id", mTimeAdapter.getItemCount());
+                mContentValues.put("hour", onTime.getHour());
+                mContentValues.put("minute", onTime.getMinute());
+                mContentValues.put("attribute", onTime.getAttribute());
+                mContentValues.put("daysOfWeek", onTime.getDaysOfWeek());
+                mTimeDb.insert(TABLE_NAME, null, mContentValues);
+                mContentValues.clear();
+            } else {
+                Toast.makeText(getActivity(), getResources().getString(R.string.on_time_exist), Toast.LENGTH_SHORT).show();
+            }
 
             mRecyclerView.scrollToPosition(mTimeAdapter.getItemCount() - 1);
 
-            Log.i(TAG, "onActivityResult: getHour=" + offTime.getHour());
-            Log.i(TAG, "onActivityResult: getMinute=" + offTime.getMinute());
-            Log.i(TAG, "onActivityResult: getDaysOfWeek=" + offTime.getDaysOfWeek());
-            Log.i(TAG, "onActivityResult: getAttribute=" + offTime.getAttribute());
+//            Log.i(TAG, "onActivityResult: getHour=" + offTime.getHour());
+//            Log.i(TAG, "onActivityResult: getMinute=" + offTime.getMinute());
+//            Log.i(TAG, "onActivityResult: getDaysOfWeek=" + offTime.getDaysOfWeek());
+//            Log.i(TAG, "onActivityResult: getAttribute=" + offTime.getAttribute());
             Intent offIntent = new Intent("com.soniq.cybercast.time");
             offIntent.putExtra("hour", offTime.getHour());
             offIntent.putExtra("minute", offTime.getMinute());
@@ -219,9 +227,10 @@ public class BasicTimeSwitchFragment extends Fragment implements View.OnClickLis
                 int daysOfWeek = mCursor.getInt(mCursor.getColumnIndex("daysOfWeek"));
 
                 mTimeList.add(new MyTime(hour, minute, attribute, daysOfWeek));
-//                Log.i(TAG, "initTimes: " + "id = " + id + " hour = " + hour + "  minute = " + minute + "  attribute = " + attribute + "  daysOfWeek = " + daysOfWeek);
+                Log.i(TAG, "initTimes: " + "id = " + id + " hour = " + hour + "  minute = " + minute + "  attribute = " + attribute + "  daysOfWeek = " + daysOfWeek);
 
             } while (mCursor.moveToNext());
+            mCursor.close();
         }
     }
 

@@ -1,6 +1,5 @@
 package cn.com.hisistar.poweronofftimetest;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -34,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
 //        intent3.putExtra("mAttribute", 1);
 //        intent3.putExtra("daysOfWeek", 0x7f);
 //        sendBroadcast(intent3);
-        Intent intent = new Intent("com.soniq.cybercast.time_delete");
-        intent.putExtra("delete_all", true);
-//        intent.putExtra("mAttribute", 2);
-        sendBroadcast(intent);
+//        Intent intent = new Intent("com.soniq.cybercast.time_delete");
+//        intent.putExtra("delete_all", true);
+////        intent.putExtra("mAttribute", 2);
+//        sendBroadcast(intent);
     }
 }

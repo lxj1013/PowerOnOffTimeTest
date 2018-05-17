@@ -42,10 +42,30 @@ public class TimeAdapter extends RecyclerView.Adapter<TimeAdapter.ViewHolder> {
         return mTimeList.get(position);
     }
 
-    public void add(MyTime time, int position) {
+    public boolean add(MyTime time, int position) {
+        for (int i = 0; i < getItemCount(); i++) {
+            MyTime myTime = mTimeList.get(i);
+            int hour = myTime.getHour();
+            Log.i(TAG, "add: hour = " + hour);
+            if (!(time.getHour() == hour)) {
+                continue;
+            }
+            int minute = myTime.getMinute();
+            Log.i(TAG, "add: minute = " + minute);
+            if (!(time.getMinute() == minute)) {
+                continue;
+            }
+
+            int daysOfWeek = myTime.getDaysOfWeek();
+            Log.i(TAG, "add: daysOfWeek = " + Integer.toBinaryString(daysOfWeek));
+            if ((daysOfWeek & time.getDaysOfWeek()) != 0) {
+                return false;
+            }
+        }
         mTimeList.add(position, time);
         notifyItemInserted(position);
         notifyItemRangeChanged(position, getItemCount());
+        return true;
     }
 
     public void remove(int position) {
